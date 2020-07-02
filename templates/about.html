@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/home-bg.png') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>About EDA</h1>
+              <span class="subheading">This is what EDA is.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <p><B>Exploratory Data Analysis (EDA)</B> is the most critical initial step for Data Scientists to analyze a new dataset, this guide describes simple & advanced techniques using Python.</p>
+          <p>Exploratory Data Analysis is like listening to what the data can tell us before we start the actual modeling process for a head start. The outcome of this analysis is some insights presented by summarised statistics and graphical representations. Also, it is a good practice though to use multiple exploratory techniques to have more confidence in the conclusions reached about the data.</p>
+          <p>Generally speaking, any method of looking at data that does not include formal statistical modeling and inference may fall under the umbrella of exploratory data analysis. In fact, EDA can be considered the most critical step in analyzing data without which you may end up with less optimal, less interpretable and less accurate models.</p>
+        </div>
+      </div>
+    </div>
+
+   {% endblock %}
